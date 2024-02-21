@@ -1,0 +1,9 @@
+/* .p-rating .p-rating-icon.pi-star-fill{
+    color: yellow !important;
+} */
+:host ::ng-deep 
+	.p-rating-icon:not(.p-rating-cancel), 
+:host ::ng-deep 
+	.p-rating-icon:not(.p-rating-cancel):hover { 
+	color: rgb(236, 196, 67) !important;
+}

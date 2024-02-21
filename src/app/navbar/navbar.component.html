@@ -1,0 +1,69 @@
+<nav class="navbar navbar-dark bg-dark" >
+    <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Offcanvas dark navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5> -->
+                <img src="https://www.w3schools.com/howto/img_avatar.png"
+                    style="height: 3rem;width: 3rem;border-radius: 50%;">
+                <h5>Hello,{{ Name }}</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div>
+                <!-- <button class="btn btn-success" style="margin-left: 1rem;">Sign In</button> -->
+                <a class="nav-link" routerLink="/signUp" style="color: green;margin-left: 1rem;"><strong>Sign
+                        In</strong></a>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Best Sellers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/account" [queryParams]="{flag:true}">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/login" style="color: red;" (click)="signOutFun()">Sign Out</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <img src="assets/cl.png" style="height: 5rem;margin-right: 50rem;border-radius: 50%;width: auto;">
+        <a routerLink="/mycart" class="navbar-brand"><i class="bi bi-cart2"></i> My Cart</a>
+        <a routerLink="/buyItem" class="navbar-brand">Order</a>
+        <a href="#" class="navbar-brand">Contact Us</a>
+        <!-- <a class="navbar-brand" href="#">Offcanvas dark navbar</a> -->
+        <!-- <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form> -->
+
+    </div>
+</nav>
